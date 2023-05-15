@@ -1,19 +1,11 @@
-import { NativeBaseProvider, extendTheme } from 'native-base';
 import ExampleScreen from './src/screens/example/ExampleScreen';
+import AppThemeProvider from './src/theme/AppThemeProvider';
 
 const App = () => {
-  const { colors } = extendTheme({});
-
-  const customTheme = extendTheme({
-    colors: {
-      primary: colors.orange,
-    },
-  });
-
   return (
-    <NativeBaseProvider theme={customTheme}>
+    <AppThemeProvider>
       <ExampleScreen />
-    </NativeBaseProvider>
+    </AppThemeProvider>
   );
 };
 

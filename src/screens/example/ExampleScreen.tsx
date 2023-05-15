@@ -7,7 +7,6 @@ const ExampleScreen = () => {
         <FormControl.Label>Informe seu nome:</FormControl.Label>
         <Input />
       </FormControl>
-
       <Button>Hello, Native Base!</Button>
     </VStack>
   );
